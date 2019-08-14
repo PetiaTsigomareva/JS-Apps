@@ -1,0 +1,21 @@
+<tr>
+  <td class="">{{@index}}</td>
+  <td class="">{{product}}</td>
+  <td class="description">{{description}}</td>
+  <td class="">{{price}}</td>
+  <td>
+    <a href='#/offerDetails/{{_id}}' class="btn-primary btn">Order details</a>
+  </td>
+  <td>
+    {{#if isCreator}}
+      <a href='#/offerDelete/{{_id}}' class="btn-danger btn">Delete</a>
+      <a href='#/offerEdit/{{_id}}' class="btn-info btn">Edit</a>
+    {{else}}
+      <a href="#/buy/{{_id}}" class="btn-warning btn">Buy</a>
+    {{/if}}
+
+  </td>
+</tr>
+
+
+

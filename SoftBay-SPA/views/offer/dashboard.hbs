@@ -1,0 +1,39 @@
+<!-- Dashboard -->
+{{> header}}
+<table style="margin: 0 auto; margin-top:5%; margin-bottom: 5%; width: 95%;" class="table table-hover">
+  <thead>
+  <tr class="bg-warning">
+    <th>
+      #
+    </th>
+    <th>
+      Name
+    </th>
+    <th>
+      Description
+    </th>
+    <th>
+      Price
+    </th>
+    <th>
+      Details
+    </th>
+    <th>
+      Actions
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each offers}}
+    {{> offerView}}
+  {{else}}
+    <tr>
+      <td class="text-center font-italic bold"> There are no offers, we are very sorry!!!!!</td>
+    </tr>
+  {{/each}}
+
+  </tbody>
+
+</table>
+<!-- /.Dashboard -->
+{{> footer}}
